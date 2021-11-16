@@ -90,7 +90,7 @@
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                  </padding>
                               </Hyperlink>
-                              <Button mnemonicParsing="false" onAction="#pressBtnPesquisar" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand;" text="Pesquisar">
+                              <Button mnemonicParsing="false" onAction="#pressBtnPesquisar" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Pesquisar">
                                  <padding>
                                     <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                                  </padding>

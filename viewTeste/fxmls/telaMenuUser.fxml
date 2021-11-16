@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="telaMenuUsersController">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telaMenuUsersController">
    <content>
       <VBox alignment="CENTER_LEFT" prefWidth="780.0" style="-fx-background-color: black;">
          <children>
@@ -63,7 +63,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <children>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -73,7 +73,7 @@
                               <Image url="@../images/cadastrarPaciente.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressCadastrarPaciente" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Cadastrar Paciente">
+                        <Button mnemonicParsing="false" onAction="#pressCadastrarPaciente" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Cadastrar Paciente">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -86,7 +86,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.columnIndex="1">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.columnIndex="1">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -96,7 +96,7 @@
                               <Image url="@../images/cadastrarVacina.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressCadastrarVacina" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Cadastrar Vacina">
+                        <Button mnemonicParsing="false" onAction="#pressCadastrarVacina" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Cadastrar Vacina">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -109,7 +109,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.rowIndex="1">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.rowIndex="1">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -119,7 +119,7 @@
                               <Image url="@../images/pesquisarPaciente.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressPesquisarPaciente" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Pesquisar Paciente">
+                        <Button mnemonicParsing="false" onAction="#pressPesquisarPaciente" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Pesquisar Paciente">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -132,7 +132,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -142,7 +142,7 @@
                               <Image url="@../images/pesquisarVacina.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressPesquisarVacina" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Pesquisar Vacina">
+                        <Button mnemonicParsing="false" onAction="#pressPesquisarVacina" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Pesquisar Vacina">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -155,7 +155,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.rowIndex="2">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.rowIndex="2">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -165,7 +165,7 @@
                               <Image url="@../images/listarPacientes.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressListarPacientes" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Listar Pacientes">
+                        <Button mnemonicParsing="false" onAction="#pressListarPacientes" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Listar Pacientes">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -178,7 +178,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -188,7 +188,7 @@
                               <Image url="@../images/listarVacina.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressListarVacinas" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Listar Vacinas">
+                        <Button mnemonicParsing="false" onAction="#pressListarVacinas" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Listar Vacinas">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -201,7 +201,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.columnIndex="2">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.columnIndex="2">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -211,7 +211,7 @@
                               <Image url="@../images/cadastrarAtendente.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressCadastrarAtendente" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Cadastrar Atendente">
+                        <Button mnemonicParsing="false" onAction="#pressCadastrarAtendente" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Cadastrar Atendente">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -224,7 +224,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.columnIndex="3">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.columnIndex="3">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -234,7 +234,7 @@
                               <Image url="@../images/cadastrarEnfermeiro.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressCadastrarAplicador" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Cadastrar Aplicador">
+                        <Button mnemonicParsing="false" onAction="#pressCadastrarAplicador" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Cadastrar Aplicador">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -247,7 +247,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -257,7 +257,7 @@
                               <Image url="@../images/pesquisarAtendente.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressPesquisarAtendente" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Pesquisar Atendente">
+                        <Button mnemonicParsing="false" onAction="#pressPesquisarAtendente" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Pesquisar Atendente">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -270,7 +270,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -280,7 +280,7 @@
                               <Image url="@../images/pesquisarAplicador.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressPesquisarAplicador" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Pesquisar Aplicador">
+                        <Button mnemonicParsing="false" onAction="#pressPesquisarAplicador" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Pesquisar Aplicador">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -293,7 +293,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -303,7 +303,7 @@
                               <Image url="@../images/listarAtendentes.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressListarAtendentes" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Listar Atendentes">
+                        <Button mnemonicParsing="false" onAction="#pressListarAtendentes" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Listar Atendentes">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -316,7 +316,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.columnIndex="3" GridPane.rowIndex="2">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -326,7 +326,7 @@
                               <Image url="@../images/listarAplicadores.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressListarAplicadores" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Listar Aplicadores">
+                        <Button mnemonicParsing="false" onAction="#pressListarAplicadores" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Listar Aplicadores">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>
@@ -374,7 +374,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <children>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -384,7 +384,7 @@
                               <Image url="@../images/fazerAplicacao.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressAplicarVacina" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Aplicar Vacina">
+                        <Button mnemonicParsing="false" onAction="#pressAplicarVacina" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Aplicar Vacina">
                            <font>
                               <Font name="Tahoma Bold" size="12.0" />
                            </font>
@@ -397,7 +397,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.columnIndex="1">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.columnIndex="1">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -407,7 +407,7 @@
                               <Image url="@../images/consultarAplicacao.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressConsultarAplicacao" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Consultar Aplicação">
+                        <Button mnemonicParsing="false" onAction="#pressConsultarAplicacao" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Consultar Aplicação">
                            <font>
                               <Font name="Tahoma Bold" size="12.0" />
                            </font>
@@ -420,7 +420,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;" GridPane.columnIndex="2">
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css" GridPane.columnIndex="2">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -430,7 +430,7 @@
                               <Image url="@../images/listarAplicacoes.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressListarAplicacoes" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Listar Aplicações">
+                        <Button mnemonicParsing="false" onAction="#pressListarAplicacoes" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Listar Aplicações">
                            <font>
                               <Font name="Tahoma Bold" size="12.0" />
                            </font>

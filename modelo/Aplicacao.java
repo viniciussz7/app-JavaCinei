@@ -10,14 +10,15 @@ public class Aplicacao implements Serializable {
     private Aplicador aplicador;
     private Date dataAplicacao;
     private Date dataProximaDose;
-    //private int dose;
+    private int dose;
     
-    public Aplicacao(Paciente paciente,Vacina vacina, Aplicador aplicador, Date dataAplicacao, Date dataProximaDose){
+    public Aplicacao(Paciente paciente,Vacina vacina, Aplicador aplicador, Date dataAplicacao, Date dataProximaDose, int dose){
         this.paciente = paciente;
         this.vacina = vacina;
         this.aplicador = aplicador;
         this.dataAplicacao = dataAplicacao;
         this.dataProximaDose = dataProximaDose;
+        this.dose = dose;
     }
 
     public Paciente getPaciente() {
@@ -48,9 +49,17 @@ public class Aplicacao implements Serializable {
     public Date getDataAplicacao() {
         return dataAplicacao;
     }
-
+    
     public void setDataAplicacao(Date dataAplicacao) {
         this.dataAplicacao = dataAplicacao;
+    }
+    
+    public int getDose() {
+        return dose;
+    }
+    
+    public void setDose(int dose) {
+        this.dose = dose;
     }
     
 }

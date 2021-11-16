@@ -145,7 +145,7 @@
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                  </padding>
                               </Hyperlink>
-                              <Button mnemonicParsing="false" onAction="#pressBtnProximo" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand;" text="Avançar">
+                              <Button mnemonicParsing="false" onAction="#pressBtnProximo" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Avançar">
                                  <padding>
                                     <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                                  </padding>
@@ -421,7 +421,7 @@
                                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                              </padding>
                                           </Button>
-                                          <Button mnemonicParsing="false" onAction="#pressBtnAplicar" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand;" text="Aplicar">
+                                          <Button mnemonicParsing="false" onAction="#pressBtnAplicar" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Aplicar">
                                              <padding>
                                                 <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                                              </padding>

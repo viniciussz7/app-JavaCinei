@@ -63,7 +63,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <children>
-                  <VBox alignment="CENTER" prefHeight="340.0" prefWidth="386.0" style="-fx-background-color: white; -fx-border-color: #9acf25; -fx-border-width: 2; -fx-border-radius: 10; -fx-background-radius: 10;">
+                  <VBox alignment="CENTER" prefHeight="340.0" prefWidth="386.0" style="-fx-background-radius: 10;" styleClass="vbox" stylesheets="@../css/telaMenuUser.css">
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <VBox.margin>
@@ -73,7 +73,7 @@
                               <Image url="@../images/pesquisarPaciente.png" />
                            </image>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#pressPesquisarPaciente" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand; -fx-opacity: 0.8;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Pesquisar Paciente">
+                        <Button mnemonicParsing="false" onAction="#pressPesquisarPaciente" style="-fx-background-radius: 10;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Pesquisar Paciente">
                            <VBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </VBox.margin>

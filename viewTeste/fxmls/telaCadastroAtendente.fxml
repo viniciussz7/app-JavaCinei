@@ -185,7 +185,7 @@
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </GridPane>
-                        <Button mnemonicParsing="false" onAction="#pressBtnCadastrar" prefHeight="27.0" prefWidth="130.0" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand;" text="Cadastrar">
+                        <Button mnemonicParsing="false" onAction="#pressBtnCadastrar" prefHeight="27.0" prefWidth="130.0" style="-fx-background-color: #9acf25; -fx-background-radius: 10; -fx-cursor: hand;" styleClass="btnMenu" stylesheets="@../css/telaMenuUser.css" text="Cadastrar">
                            <VBox.margin>
                               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                            </VBox.margin>

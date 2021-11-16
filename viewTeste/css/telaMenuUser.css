@@ -1,3 +1,9 @@
+.btnMenu {
+    -fx-background-color:  #9acf25;
+    -fx-opacity: 0.80;
+    -fx-cursor: hand;
+}
+
 .btnMenu:hover {
     -fx-opacity: 1;
 }
@@ -10,5 +16,17 @@
 }
 
 .btnVoltar:hover {
+    -fx-opacity: 1;
+}
+
+.vbox {
+    -fx-background-color: white;
+    -fx-border-color: #9acf25;
+    -fx-border: 2px;
+    -fx-border-radius: 10px;
+    -fx-opacity: 0.9;
+}
+
+.vbox:hover {
     -fx-opacity: 1;
 }
