@@ -1,0 +1,8 @@
+.loginApresentation {
+    -fx-background-image: url(../../viewTeste/images/account.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+    -fx-opacity: 0.8;
+}
+

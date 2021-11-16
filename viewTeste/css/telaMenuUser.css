@@ -1,0 +1,14 @@
+.btnMenu:hover {
+    -fx-opacity: 1;
+}
+
+.btnVoltar {
+    -fx-background-image: url(../../viewTeste/images/btn_Voltar.png);
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+
+.btnVoltar:hover {
+    -fx-opacity: 1;
+}

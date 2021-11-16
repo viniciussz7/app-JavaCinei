@@ -1,0 +1,32 @@
+.btnEditar {
+    -fx-background-image: url(../images/editar.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+    -fx-border-width: 2px;
+    -fx-border-color: #9acf25;
+    
+}
+
+.btnEditar:hover {
+    -fx-opacity: 1;
+}
+
+.btnSalvar {
+    -fx-background-image: url(../images/salve-.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+    -fx-border-width: 2px;
+    -fx-border-color: #9acf25;
+}
+
+.btnSalvar:hover {
+    -fx-opacity: 1;
+}

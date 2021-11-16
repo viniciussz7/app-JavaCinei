@@ -1,0 +1,17 @@
+{
+    "java.project.sourcePaths": [
+        "model",
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\vsouz\\Documents\\JavaLib\\lib\\javafx.base.jar",
+        "c:\\Users\\vsouz\\Documents\\JavaLib\\lib\\javafx.controls.jar",
+        "c:\\Users\\vsouz\\Documents\\JavaLib\\lib\\javafx.fxml.jar",
+        "c:\\Users\\vsouz\\Documents\\JavaLib\\lib\\javafx.graphics.jar",
+        "c:\\Users\\vsouz\\Documents\\JavaLib\\lib\\javafx.media.jar",
+        "c:\\Users\\vsouz\\Documents\\JavaLib\\lib\\javafx.swing.jar",
+        "c:\\Users\\vsouz\\Documents\\JavaLib\\lib\\javafx.web.jar",
+        "c:\\Users\\vsouz\\Documents\\JavaLib\\lib\\javafx-swt.jar"
+    ]
+}
