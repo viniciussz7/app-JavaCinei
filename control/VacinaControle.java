@@ -1,14 +1,14 @@
 package control;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 
 import modelo.Vacina;
 
 public class VacinaControle {
 
-    public void cadastrarVacina(String fabricante, long lote, Date dataFabricacao, Date dataVencimento)  throws IOException, ClassNotFoundException {
+    public void cadastrarVacina(String fabricante, long lote, LocalDate dataFabricacao, LocalDate dataVencimento)  throws IOException, ClassNotFoundException {
         Vacina v = new Vacina(fabricante, lote, dataFabricacao, dataVencimento);
         v.cadastrarVacina(v);
     }

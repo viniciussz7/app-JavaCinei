@@ -1,14 +1,13 @@
 package control;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
-
 import modelo.Paciente;
 
 public class PacienteControle {
     
-    public void cadastrarPaciente(String nome,long cpf, Date dataNascimento, long cep, long telefone) throws IOException, ClassNotFoundException {
+    public void cadastrarPaciente(String nome,long cpf, LocalDate dataNascimento, long cep, long telefone) throws IOException, ClassNotFoundException {
         Paciente p = new Paciente(nome, cpf, dataNascimento, cep, telefone);
         p.cadastrarPaciente(p);
     }

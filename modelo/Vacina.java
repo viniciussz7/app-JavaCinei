@@ -3,6 +3,7 @@ package modelo;
 import dados.VacinaDados;
 import java.io.IOException;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -10,12 +11,12 @@ public class Vacina implements Serializable {
 
     private String fabricante;
     private long lote;
-    private Date dataFabricacao;
-    private Date dataVencimento;
+    private LocalDate dataFabricacao;
+    private LocalDate dataVencimento;
     
     public Vacina() {}
     
-    public Vacina(String fabricante, long lote, Date dataFabricacao, Date dataVencimento) {
+    public Vacina(String fabricante, long lote, LocalDate dataFabricacao, LocalDate dataVencimento) {
         this.fabricante = fabricante;
         this.lote = lote;
         this.dataFabricacao = dataFabricacao;
@@ -38,19 +39,19 @@ public class Vacina implements Serializable {
         this.lote = lote;
     }
     
-    public Date getDataFabricacao() {
+    public LocalDate getDataFabricacao() {
         return dataFabricacao;
     }
     
-    public void setDataFabricacao(Date dataFabricacao) {
+    public void setDataFabricacao(LocalDate dataFabricacao) {
         this.dataFabricacao = dataFabricacao;
     }
     
-    public Date getDataVencimento() {
+    public LocalDate getDataVencimento() {
         return dataVencimento;
     }
     
-    public void setDataVencimento(Date dataVencimento) {
+    public void setDataVencimento(LocalDate dataVencimento) {
         this.dataVencimento = dataVencimento;
     }
     

@@ -4,6 +4,7 @@ import dados.PacienteDados;
 
 import java.io.IOException;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -12,9 +13,9 @@ public class Paciente implements Serializable{
     private long cep;
     private long cpf;
     private long telefone;
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
 
-    public Paciente(String nome,long cpf, Date dataNascimento, long cep, long telefone){
+    public Paciente(String nome,long cpf, LocalDate dataNascimento, long cep, long telefone){
         this.nome=nome;
         this.cep=cep;
         this.cpf= cpf;
@@ -55,11 +56,11 @@ public class Paciente implements Serializable{
         return telefone;
     }
     
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
     

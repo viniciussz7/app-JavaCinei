@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
+
 public class Aplicacao implements Serializable {
     private Paciente paciente;
     private Vacina vacina;
@@ -52,6 +53,15 @@ public class Aplicacao implements Serializable {
     
     public void setDataAplicacao(Date dataAplicacao) {
         this.dataAplicacao = dataAplicacao;
+    }
+    public void aplicarVacina(Aplicacao at) throws IOException, ClassNotFoundException {
+        AplicacaoDados ad = new AplicacaoDados();
+        ad.aplicarVacina(at);
+    }
+
+    public ArrayList<Aplicacao> listarAplicacoes() throws IOException, ClassNotFoundException {
+        AplicacaoDados ad = new AplicacaoDados();
+        return ad.listarAplicacoes();
     }
     
     public int getDose() {
