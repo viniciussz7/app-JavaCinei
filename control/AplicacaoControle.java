@@ -1,35 +1,38 @@
 package control;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
-import modelo.*;
+import modelo.Aplicacao;
+import modelo.Aplicador;
+import modelo.Paciente;
+import modelo.Vacina;
+
 
 
 public class AplicacaoControle {
-    public AplicacaoControle(){
-        
-        
-    
-    }
-    public void AplicarVacina(Paciente p1,Vacina v1,Aplicador a1,Date dataAplicacao, Date dataProximaDose)throws IOException, ClassNotFoundException {
-        Aplicacao a1 = new Aplicacao(p1,v1,dataAplicacao,dataProximadose);
+    private Paciente pp = new Paciente();
+
+    public void AplicarVacina(Paciente paciente,Vacina vacina, Aplicador aplicador, LocalDate dataAplicacao, LocalDate dataProximaDose, int dose)throws IOException, ClassNotFoundException {
+        Aplicacao a1 = new Aplicacao(paciente,vacina,aplicador,dataAplicacao,dataProximaDose,dose);
         a1.aplicarVacina(a1);
     }
+
     public ArrayList<Aplicacao> listarAplicacoes()throws IOException, ClassNotFoundException {
-        Aplicacao a1 = new  Aplicacao();
-        a1.listarAplicaoes();
+        Aplicacao a1 = new Aplicacao();
+        return a1.listarAplicacoes();
     
-    }/*
-    public Aplicador pesquisarAplicador(Paciente p1) throws IOException, ClassNotFoundException {
-       Aplicacao a1 = null;
-        ArrayList<Aplicacao> listaAplicacoes = listarAplicacoes();
-        for (Aplicacao aplicacao: listaAplicacoes ) {
-            if (p1.equals()) {
-                ap = aplicador;
+    }
+
+    /*public Paciente pesquisarAplicacao(Paciente p1) throws IOException, ClassNotFoundException {
+        Paciente a1 = null;
+        ArrayList<Paciente> listaAplicacoes = pp.listarPaciente();
+        for (int i=0;i<listaAplicacoes.size();i++) {
+            if (p1.equals(listaAplicacoes.get(i).getNome())) {
+                a1 = p1;
                 break;
             }
         }
-        return ap;
+        return a1;
     }*/
     
 }

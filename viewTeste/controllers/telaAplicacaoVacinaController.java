@@ -1,5 +1,11 @@
 package viewTeste.controllers;
 
+import java.io.IOException;
+import java.time.LocalDate;
+import control.AplicacaoControle;
+import control.AplicadorControle;
+import control.PacienteControle;
+import control.VacinaControle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -10,6 +16,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 
 public class telaAplicacaoVacinaController {
+    
+    private AplicacaoControle ap = new AplicacaoControle();
+    private AplicadorControle ac = new AplicadorControle();
+    private PacienteControle pc = new PacienteControle();
+    private VacinaControle vc = new VacinaControle();
 
     @FXML
     private Tab abaAplicacaoVacina;
@@ -57,7 +68,17 @@ public class telaAplicacaoVacinaController {
     private TextField loteVacinaAplicacaoField;
 
     @FXML
-    void pressBtnAplicar(ActionEvent event) {
+    void pressBtnAplicar(ActionEvent event) throws IOException, ClassNotFoundException {
+        RadioButton doses = (RadioButton) dose.getSelectedToggle();
+        String coren = corenAplicadorAplicacaoField.getText();
+        String cpfPaciente = cpfPacienteAplicacaoField.getText();
+        String dadosCpfPaciente = dadosCpfPacienteAplicacaoField.getText();
+        LocalDate DataAplicacao = dadosDataAplicacaoAplicacaoField.getValue();
+        String fabriacante = dadosFabricanteVacinaAplicacaoField.getText();
+        String lote = dadosLoteVacinaAplicacaoField.getText();
+        String nomePaciente = dadosNomePacienteAplicacaoField.getText();
+        ap.AplicarVacina(pc.pesquisarPaciente(Long.parseLong(cpfPaciente)),vc.pesquisarVacina(Long.parseLong(lote)),ac.pesquisarAplicador(Long.parseLong(coren)),DataAplicacao,null,Integer.parseInt(String.valueOf(doses)));
+
 
     }
 

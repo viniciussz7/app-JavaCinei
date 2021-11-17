@@ -1,12 +1,18 @@
 package viewTeste.controllers;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class telaPesquisaPacienteController {
 
@@ -110,8 +116,14 @@ public class telaPesquisaPacienteController {
     }
 
     @FXML
-    void pressCancelar(ActionEvent event) {
-
+    void pressCancelar(ActionEvent event) throws IOException {
+        //if
+        Stage s1 = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("telaMenuUsers.fxml"));
+        Scene scene = new Scene(root);
+        s1.setTitle("Login do Atendente");
+        s1.setScene(scene);
+        s1.show();
     }
 
 }

@@ -1,19 +1,21 @@
 package modelo;
 
+import java.io.IOException;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
+import dados.AplicacaoDados;
 
 
 public class Aplicacao implements Serializable {
     private Paciente paciente;
     private Vacina vacina;
     private Aplicador aplicador;
-    private Date dataAplicacao;
-    private Date dataProximaDose;
+    private LocalDate dataAplicacao;
+    private LocalDate dataProximaDose;
     private int dose;
     
-    public Aplicacao(Paciente paciente,Vacina vacina, Aplicador aplicador, Date dataAplicacao, Date dataProximaDose, int dose){
+    public Aplicacao(Paciente paciente,Vacina vacina, Aplicador aplicador, LocalDate dataAplicacao, LocalDate dataProximaDose, int dose){
         this.paciente = paciente;
         this.vacina = vacina;
         this.aplicador = aplicador;
@@ -21,6 +23,8 @@ public class Aplicacao implements Serializable {
         this.dataProximaDose = dataProximaDose;
         this.dose = dose;
     }
+
+    public Aplicacao() {}
 
     public Paciente getPaciente() {
         return paciente;
@@ -40,18 +44,18 @@ public class Aplicacao implements Serializable {
     public void setAplicador(Aplicador aplicador) {
         this.aplicador = aplicador;
     }
-    public Date getDataProximaDose() {
+    public LocalDate getDataProximaDose() {
         return dataProximaDose;
     }
-    public void setDataProximaDose(Date dataProximaDose) {
+    public void setDataProximaDose(LocalDate dataProximaDose) {
         this.dataProximaDose = dataProximaDose;
     }
 
-    public Date getDataAplicacao() {
+    public LocalDate getDataAplicacao() {
         return dataAplicacao;
     }
     
-    public void setDataAplicacao(Date dataAplicacao) {
+    public void setDataAplicacao(LocalDate dataAplicacao) {
         this.dataAplicacao = dataAplicacao;
     }
     public void aplicarVacina(Aplicacao at) throws IOException, ClassNotFoundException {

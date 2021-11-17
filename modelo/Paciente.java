@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Paciente implements Serializable{
     private String nome;

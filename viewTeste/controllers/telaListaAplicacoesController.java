@@ -23,6 +23,19 @@ public class telaListaAplicacoesController {
 
     @FXML
     private TableView<?> tableListaAtendentes;
+    
+    @FXML
+    private TextArea area;
+
+    public void clique(ActionEvent event){
+        try {
+            area.setText(String.valueOf(at.listarAtendentes()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 
 }
 

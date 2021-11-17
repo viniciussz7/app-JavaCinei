@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Vacina implements Serializable {
 
@@ -13,14 +12,16 @@ public class Vacina implements Serializable {
     private long lote;
     private LocalDate dataFabricacao;
     private LocalDate dataVencimento;
+    private String tipoDose;
     
     public Vacina() {}
     
-    public Vacina(String fabricante, long lote, LocalDate dataFabricacao, LocalDate dataVencimento) {
+    public Vacina(String fabricante, long lote, LocalDate dataFabricacao, LocalDate dataVencimento, String tipoDose) {
         this.fabricante = fabricante;
         this.lote = lote;
         this.dataFabricacao = dataFabricacao;
         this.dataVencimento = dataVencimento;
+        this.tipoDose = tipoDose;
     }
 
     public String getFabricante() {
@@ -55,6 +56,13 @@ public class Vacina implements Serializable {
         this.dataVencimento = dataVencimento;
     }
     
+    public String getTipoDose() {
+        return tipoDose;
+    }
+
+    public void setTipoDose(String tipoDose) {
+        this.tipoDose = tipoDose;
+    }
     
     @Override
     public String toString(){
@@ -70,5 +78,6 @@ public class Vacina implements Serializable {
         VacinaDados vd = new VacinaDados();
         return vd.listarVacinas();
     }
+
 
 }

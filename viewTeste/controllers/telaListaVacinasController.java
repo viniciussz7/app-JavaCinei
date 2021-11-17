@@ -33,18 +33,26 @@ public class telaListaVacinasController {
 
     private ObservableList<Vacina> observableListVacina;
 
-    public void initialize() throws ClassNotFoundException, IOException {
+    public void initialize() {
         carregarTableVacina();
     }
 
-    public void carregarTableVacina() throws ClassNotFoundException, IOException {
+    public void carregarTableVacina() {
 
         dataFabricacaoVacinaColumn.setCellValueFactory(new PropertyValueFactory<>("dataFabricacao"));
         dataVencimentoVacinaColumn.setCellValueFactory(new PropertyValueFactory<>("dataVencimento"));
         fabricanteVacinaColumn.setCellValueFactory(new PropertyValueFactory<>("fabricante"));
         loteVacinaColumn.setCellValueFactory(new PropertyValueFactory<>("lote"));
 
-        observableListVacina = FXCollections.observableArrayList(vc.listarVacinas());
+        try {
+            observableListVacina = FXCollections.observableArrayList(vc.listarVacinas());
+        } catch (ClassNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         tableListaVacinas.setItems(observableListVacina);
 
     }

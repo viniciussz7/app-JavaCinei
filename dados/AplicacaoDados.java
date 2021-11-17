@@ -7,13 +7,13 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import model.*;
+import modelo.Aplicacao;
 public class AplicacaoDados {
-    public aplicarVacina(Aplicacao a1) throws IOException, FileNotFoundException, ClassNotFoundException{
+    public void aplicarVacina(Aplicacao a1) throws IOException, FileNotFoundException, ClassNotFoundException{
         ArrayList<Aplicacao> aplicacoes = new ArrayList<Aplicacao>();
         File arquivo = new File("Aplicacoes.ser");
-        if(arquivo.exits()){
-            aplicacoes = listarAplicacoe(); //implementar
+        if(arquivo.exists()){
+            aplicacoes = listarAplicacoes(); //implementar
             
         }
         aplicacoes.add(a1);
@@ -25,7 +25,7 @@ public class AplicacaoDados {
     public ArrayList<Aplicacao> listarAplicacoes() throws IOException, FileNotFoundException, ClassNotFoundException{
         ArrayList<Aplicacao> aplicacoes = new ArrayList<Aplicacao>();
         File arquivo = new File("Aplicacoes.ser");
-        if(arquivo.exits()){
+        if(arquivo.exists()){
             FileInputStream fluxo = new FileInputStream(arquivo);
             ObjectInputStream load = new ObjectInputStream(fluxo);
             aplicacoes = (ArrayList<Aplicacao>) load.readObject();
