@@ -9,7 +9,7 @@
 }
 
 .btnVoltar {
-    -fx-background-image: url(../../viewTeste/images/btn_Voltar.png);
+    -fx-background-image: url(../images/btn_Voltar.png);
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
     -fx-background-size: contain;

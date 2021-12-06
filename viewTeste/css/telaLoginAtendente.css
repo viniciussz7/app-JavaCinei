@@ -1,5 +1,5 @@
 .loginApresentation {
-    -fx-background-image: url(../../viewTeste/images/account.png);
+    -fx-background-image: url(../images/account.png);
     -fx-background-repeat: no-repeat;
     -fx-background-size: contain;
     -fx-background-position: center;
